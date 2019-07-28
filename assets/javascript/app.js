@@ -1,10 +1,10 @@
 $("#search").click(function() {
     var drink = $("#drink-name").val();
     $("#drink1").html("");
-    getgiphy(drink);
+    getdrink(drink);
   });
  
-  function getgiphy(drink) {
+  function getdrink(drink) {
     // queryURL endpoint for gin API
     var queryURL = "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=" + drink;
  
@@ -16,12 +16,20 @@ $("#search").click(function() {
         alert(response.Error);
       }
       else {
-        // createCard(response);
-        // giphyList.push(response.Title);
-        // for (i=0; i<response.data.length; i++){
-          $("#drink1").append("<h2> Recipe   :  " + response.drinks[0].strInstructions + "</h2>");
-          $("#drink1").append("<img src=" + response.drinks[0].strDrinkThumb+ ">");
-          // $("#img" + i).css("margin", "10px");
+          $("#drink1").append("<h2> Directions :  " + response.drinks[0].strInstructions + "</h2>");
+            $("#drink1").append("<h2> Ingredient   :  " + response.drinks[0].strIngredient1 + "</h2>");
+            $("#drink1").append("<h2> Ingredient   :  " + response.drinks[0].strIngredient2 + "</h2>");
+            $("#drink1").append("<h2> Ingredient   :  " + response.drinks[0].strIngredient3 + "</h2>");
+            $("#drink1").append("<h2> Ingredient   :  " + response.drinks[0].strIngredient4 + "</h2>");
+            $("#drink1").append("<h2> Ingredient   :  " + response.drinks[0].strIngredient5 + "</h2>");
+            $("#drink1").append("<h2> Ingredient   :  " + response.drinks[0].strIngredient6 + "</h2>");
+            $("#drink1").append("<h2> Ingredient   :  " + response.drinks[0].strIngredient7 + "</h2>");
+            $("#drink1").append("<h2> Ingredient   :  " + response.drinks[0].strIngredient8 + "</h2>");
+            $("#drink1").append("<h2> Ingredient   :  " + response.drinks[0].strIngredient9 + "</h2>");
+            $("#drink1").append("<h2> Ingredient   :  " + response.drinks[0].strIngredient10 + "</h2>");
+            $("#drink1").append("<h2> Ingredient   :  " + response.drinks[0].strIngredient11 + "</h2>");
+            $("#drink1").append("<h2> Ingredient   :  " + response.drinks[0].strIngredient12 + "</h2>");
+            $("#drink1").append("<img src=" + response.drinks[0].strDrinkThumb + ">");
  
         // }
       }
