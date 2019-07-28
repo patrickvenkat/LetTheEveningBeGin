@@ -46,6 +46,22 @@ function getdrink(drink) {
         $("#drink1").append("<h2> Temperature  :  " + response.main.temp + "</h2>");
       }
     })
+
+
+    $.ajax({
+      url: queryURL,
+      method: "GET"
+    }).done(function (response) {
+      if (response.Response === "False") {
+        alert(response.Error);
+      }
+      else {
+        $("#drink1").append("<h2> Weather Description  :  " + response.weather[0].description + "</h2>");
+      }
+    })
+
+
+    
   });
 }
 
