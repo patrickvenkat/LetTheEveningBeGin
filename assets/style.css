@@ -1,3 +1,22 @@
 h1 {
     color: blue;
+    width: 36em;
+    line-height: 1.4
+    font-family: 'Lucida Bright', Georgia, serif; 
+    font-size: 24px; 
+    font-style: normal;
+}
+
+#search{
+    color: white; 
+    background: black;
+}
+
+
+#drink1{
+   color: orange; 
+}
+
+#drink-name{
+
 }
