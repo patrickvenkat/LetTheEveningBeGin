@@ -4,12 +4,15 @@ h1 {
     line-height: 1.4;
     font-family: 'Lucida Bright', Georgia, serif; 
     font-size: 24px; 
+    width: 100%;
+    text-shadow: 1px 1px black;
 }
 
 #search{
     color: white; 
     background: rgb(199, 79, 79);
     margin-top: 1em;
+    text-shadow: 1px 1px black; 
 
 }
 #drink1{
@@ -29,13 +32,19 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     font-family: Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans, Helvetica Neue, Arial, sans-serif;
-}
 
 .jumbotron {
     background-image: url("../assets/images/food&drink.jpg");
     /* background-image: image-set("assets/images/food&drink.jpg"); */
     background-size: auto;
     height: 200px;
+
+    width: auto;
+    color: white;
+    font-size: 65px;
+    opacity: .9;
+    font-family: Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans, Helvetica Neue, Arial, sans-serif;
+    text-shadow: 3px 2px black; 
     /* width: auto; */
     width: 100%;
     color: rgb(39, 75, 33);
