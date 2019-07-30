@@ -26,6 +26,9 @@ body {
     /* background-image: image("assets/images/background.jpg"); */
     /* background-image: image-set("assets/images/background.jpg"); */
     text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans, Helvetica Neue, Arial, sans-serif;
 }
 
 .jumbotron {
