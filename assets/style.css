@@ -28,8 +28,7 @@ body {
     text-align: center;
     background-size: cover;
     background-repeat: no-repeat;
-    Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans, Helvetica Neue, Arial, sans-serif;
-}
+    font-family: Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans, Helvetica Neue, Arial, sans-serif;
 
 .jumbotron {
     background-image: url("../assets/images/food&drink.jpg");
@@ -42,6 +41,7 @@ body {
     opacity: .9;
     font-family: Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans, Helvetica Neue, Arial, sans-serif;
     text-shadow: 3px 2px black; 
+
 }
 
 footer {
