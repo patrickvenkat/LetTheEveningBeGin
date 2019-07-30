@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,24 +8,29 @@
   <link rel="stylesheet" href="assets/style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  
+
 </head>
 <body>
 
+  <div class="jumbotron jumbotron-fluid">Let The Evening BeGin</div>
+  <div id="wrapper">
+    <div class="row">
+      <div class="col-md-12">
+        <h1>Welcome! What City Are You In?</h1>
+        <input id="drink-name" placeholder="Type Your City Here!">
+      </div>
+    </div>
 
-<h1>Welcome! Search for a city to #LetYourEveningBeGin!!!</h1>
-<input id="city-name" placeholder="Search For City!" >
-<button id="city-search"> <i class="fa fa-glass" aria-hidden="true"></i> Type in a city name </button>
+  <button id="search"> <i class="fa fa-glass" aria-hidden="true"></i>Get Weather & A Drink</button>
+  <div id="drink1"></div>
+  </div>
 
-<div id="weather"></div>
+  <script src="assets/javascript/app.js"></script>
 
-<!-- <h1>Welcome! Search a Drink to #LetYourEveningBeGin!!!</h1> -->
-<!-- <input id="drink-name" placeholder="Search For Drinks!" > -->
-<!-- <button id="drink-search"> <i class="fa fa-glass" aria-hidden="true"></i> Display Drink Recipe </button> -->
-
-<!-- <div id="drink1"></div> -->
-
-<script src="assets/javascript/app.js"></script>
+  <footer>
+    <p>Copyright © 2019</p>
+  </footer>
 
 </body>
+
 </html>
