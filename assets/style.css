@@ -1,9 +1,9 @@
 h1 {
     color: white;
-    width: 36em;
     line-height: 1.4;
     font-family: 'Lucida Bright', Georgia, serif; 
     font-size: 24px; 
+    width: 100%;
 }
 
 #search{
@@ -24,16 +24,21 @@ h2{
 body {
     background-image: url("../assets/images/background.jpg");
     text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans, Helvetica Neue, Arial, sans-serif;
 }
 
 .jumbotron {
     background-image: url("../assets/images/food&drink.jpg");
-    background-size: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
     height: 200px;
     width: auto;
     color: rgb(39, 75, 33);
-    font-size: 50px;
-    position: stretch;
+    font-size: 65px;
+    opacity: .9;
+    font-family: Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans, Helvetica Neue, Arial, sans-serif;
 }
 
 footer {
