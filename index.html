@@ -13,42 +13,64 @@
 
 <body>
 
-  <div class="jumbotron jumbotron-fluid"><strong>Let The Evening BeGin</strong></div>
-  <div id="wrapper">
-    <div class="row">
-      <div class="col-md-12">
-        <h1>Welcome! What City Are You In?</h1>
-        <input id="city-name" placeholder="Type Your City Here!">
-      </div>
-    </div>
-    <button id="city-search"> <i class="fa fa-glass" aria-hidden="true"></i>Get Weather & A Drink</button>
-    <div id="city-weather"></div> 
-      <!-- this is for the card image-->
-    <div class="card" style="width: 18rem;">
-      <img src="http://images4.fanpop.com/image/photos/17800000/Cute-Panda-Cubs-Together-pandas-17838800-450-324.jpg"class="card-img-top" alt="...">
-      <div class="card-body">
-        <p class="card-text">Enjoy!</p>
-      </div>
-    </div>
-    <!-- this is for the list!-->
-    <div class="card" style="width: 18rem;">
-      <div class="card-header">
-        Ingredients List
-      </div>
-      <ul class="list-group list-group-flush">
-        <li class="list-group-item">1</li>
-        <li class="list-group-item">2</li>
-        <li class="list-group-item">3</li>
-      </ul>
-    </div>
-
+  <div class="jumbotron jumbotron-fluid"><strong>Let The Evening BeGin</strong>
+    <h1>Welcome! What City Are You In?</h1>
   </div>
 
-  <script src="assets/javascript/app.js"></script>
+  <div class="row">
+    <div class="col-md-12">
+      <input id="city-name" placeholder="Type Your City Here!">
+    </div>
+  </div>
+  <button id="city-search"> <i class="fa fa-glass" aria-hidden="true"></i>Get Weather & A Drink</button>
+  <div id="city-weather"></div>
 
-  <footer>
-    <p>Copyright © 2019</p>
-  </footer>
+  <div id="container">
+    <div class="row cards">
+      <div class="col-md-4">
+        <div class="w3-card" style="width: 18rem;">
+          <img src="assets/images/weather.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Temperature:</p>
+            <p class="card-text">Weather:</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="w3-card" style="width: 18rem;">
+          <div class="card-header">
+            Drink Recommendations:
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">1</li>
+            <li class="list-group-item">2</li>
+            <li class="list-group-item">3</li>
+            <li class="list-group-item">4</li>
+            <li class="list-group-item">5</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="w3-card" style="width: 18rem;">
+          <img class="card-img-top" src="..." alt="Drink Image">
+          <div class="card-body">
+            <h5 class="card-title">Directions & Ingredients</h5>
+            <p class="card-text">Directions Go Here</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Ingredient</li>
+            <li class="list-group-item">Ingredient</li>
+            <li class="list-group-item">Ingredient</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/javascript/app.js"></script>
+
+    <footer>
+      <p>Copyright © 2019</p>
+    </footer>
 
 </body>
 
