@@ -6,7 +6,7 @@ $("#city-search").click(function () {
 
 function getCityWeather(city) {
   // queryURL endpoint for gin API
-  var queryURL = "http://api.openweathermap.org/data/2.5/weather?APIkey=77beb286ab5ffea55b1e6542f41987d9&q=" + city;
+  var queryURL = "https://api.openweathermap.org/data/2.5/weather?APIkey=77beb286ab5ffea55b1e6542f41987d9&q=" + city;
 
   $.ajax({
     url: queryURL,
