@@ -1,6 +1,9 @@
 coldWeatherDrinks= ["A.D.M. (After Dinner Mint)", "Cosmopolitan", "Espresso Martini", "Manhattan", "Old Fashioned", "Oatmeal Cookie", "The Jimmy Conway", "A1", "Adam & Eve", "Adios Amigos Cocktail", "Brigadier", "Penicillin"];
-mildWeatherDrinks= [];
-hotWeatherDrinks= [];
+mildWeatherDrinks= ["A True Amaretto Sour", "Aviation", "Cherry Electric Lemonade", "Cream Soda", "Dirty Martini", "Gimlet", "The Last Word", "Vesper", "Adios Amigos Cocktail", "Duchamp's Punch", "Flaming Lamborghini", "Gin Rickey"];
+hotWeatherDrinks= ["A Gilligan's Island", "Absolut Summertime", "Ace", "Bahama Mama", "Bora Bora", "Lemon Drop", "Miami Vice", "Mojito", "Paloma", "Shark Attack", "Tequila Sunrise", "Greyhound"];
+
+var coldWeatherTemp = 50;
+var mildWeatherTemp = 70;
 
 $("#city-search").click(function () {
   var city = $("#city-name").val();
@@ -39,9 +42,19 @@ function getCityWeather(city) {
 }
 
 function displayDrinks(temp){
-  for (i=0; i<12; i++){
-    $("#drink" + i).html(coldWeatherDrinks[i]);
-  }
+  if (temp < coldWeatherTemp){
+    for (i=0; i<12; i++){
+      $("#drink" + i).html(coldWeatherDrinks[i]);
+    }
+  }else if ((temp >= coldWeatherTemp) && (temp < mildWeatherTemp)){
+    for (i=0; i<12; i++){
+      $("#drink" + i).html(mildWeatherDrinks[i]);
+    }
+  } else{
+    for (i=0; i<12; i++){
+      $("#drink" + i).html(hotWeatherDrinks[i]);
+    }
+  }   
 }
     // Get drink recipe
     
