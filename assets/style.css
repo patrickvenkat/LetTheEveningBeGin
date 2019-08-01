@@ -1,20 +1,49 @@
+#container {
+    padding-left: 5em;
+    padding-right: 5em;
+    padding-top: 2em;
+    margin-bottom: 5em;
+
+}
+  
+.cards{
+    background-color: rgba(241, 224, 93, 0.502);
+    padding-top: 2em;
+    padding-bottom: 2em;
+    border-radius: 15px;
+    color: rgb(238, 128, 128);
+    
+}
+
+.card-img-top{
+    opacity: .8;
+
+}
+
 h1 {
-    color: white;
+    color:white;
     width: 100%;
     line-height: 1.4;
     font-family: 'Lucida Bright', Georgia, serif; 
-    font-size: 24px; 
+    font-size: 30px; 
     width: 100%;
     text-shadow: 1px 1px black;
 }
 
 #city-search{
     color: white; 
-    background: rgb(199, 79, 79);
+    background: rgb(233, 188, 90);
     margin-top: 1em;
     text-shadow: 1px 1px black; 
+    border-radius: 15px;
 
 }
+
+#city-name{
+    border-radius: 15px;
+    text-align: center;
+}
+
 #drink1{
    color: rgb(211, 199, 60);
 }
@@ -37,11 +66,10 @@ body {
     background-image: url("../assets/images/food&drink.jpg");
     /* background-image: image-set("assets/images/food&drink.jpg"); */
     background-size: auto;
-    height: 200px;
+    height: 215px;
     width: auto;
     color: white;
-    font-size: 65px;
-    opacity: .9;
+    font-size: 70px;
     font-family: Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans, Helvetica Neue, Arial, sans-serif;
     text-shadow: 3px 2px black; 
     /* width: auto; */
@@ -49,6 +77,10 @@ body {
     color: rgb(39, 75, 33);
     font-size: 50px;
     position: stretch;
+}
+
+#drink-list{
+    background-color: black;
 }
 
 footer {
