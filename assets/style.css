@@ -128,6 +128,12 @@ body {
     background-repeat: no-repeat;
     font-family: Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans, Helvetica Neue, Arial, sans-serif;
 }
+
+.border{
+    color: red;
+}
+
+
 .jumbotron {
     background-image: url("../assets/images/food&drink.jpg");
     /* background-image: image-set("assets/images/food&drink.jpg"); */
