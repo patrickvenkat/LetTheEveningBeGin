@@ -90,19 +90,19 @@ function getdrink(drink) {
 
     
     $("#ing").html("");
+    $("#image").attr("src", response.drinks[0].strDrinkThumb);
     console.log(response.drinks[0].strDrinkThumb);
-    $("#image").prepend(`<img class="card-img-top" src="${response.drinks[0].strDrinkThumb}">`);
     $("#directions").html(response.drinks[0].strInstructions);
-    //loop through all ingredients and only print valid ingredients
     for (i = 1; i <= 15; i++) {
       var ingredientId = "strIngredient" + i;
+      var measureIg = "strMeasure" + i;
       
       if(((response.drinks[0][ingredientId])=="") || ((response.drinks[0][ingredientId])==null)){
       
       }
     
       else{
-        $("#ing").append("<li class=\"list-group-item\">" + response.drinks[0][ingredientId] + "</li>");
+        $("#ing").append("<li class=\"list-group-item\">" + response.drinks[0][measureIg] + " " + response.drinks[0][ingredientId] + "</li>");
       }
     }
 
