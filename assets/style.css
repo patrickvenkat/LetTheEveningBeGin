@@ -74,6 +74,7 @@ a:hover {
 
 .list-group-flush{
     list-style: none;
+    padding-top:1em;
 }
 
 #ing{
@@ -103,11 +104,12 @@ a:hover {
     background-color: rgba(192, 85, 66, 0.461);
     border: none;
     color: white;
-  
+
 }
 .card-img-top{
     opacity: .8;
     height: 200px;
+    padding-bottom: 1em;
 
 }
 
@@ -177,4 +179,5 @@ footer {
 img {
     height: 200px;
     width: auto;
+    padding-top: 1em;
 }
