@@ -3,7 +3,7 @@ Group Project 1
 
 A perfect blend of weather and cocktails -
 
-A responsive app that uses HTML5, Bootstrap, CSS, Javascript, and APIs.
+A responsive app that uses HTML5, Bootstrap, CSS, Javascript, JQuery, and APIs.
   Our APIs are Open Weather Map and Cocktail DB.
 
 The user enters his or her city and is recommended drinks based on the weather of that city. 
