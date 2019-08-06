@@ -2,8 +2,9 @@
 <!--marvin-->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <!--adding our links including bootstrap, jquery, and font-awesome-->
+	<!--adding our links including bootstrap, jquery, and font-awesome-->
 	<meta charset="UTF-8">
 	<meta content="width=device-width, initial-scale=1.0" name="viewport">
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
@@ -13,46 +14,50 @@
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 	<title></title>
 </head>
+
 <body>
-<!--title here for emphasis-->
-<!--puder-->
+	<!--title here for emphasis-->
+	<!--puder-->
 	<header>
 		<strong>Let The Evening BeGin</strong>
-  </header>
-<!--jumbotron for style-->
-<!--bootstrap layout and jumbotron by eliza-->
+	</header>
+	<!--jumbotron for style-->
+	<!--bootstrap layout and jumbotron by eliza-->
 	<div class="jumbotron jumbotron-fluid"></div>
 	<div class="row">
 		<div class="col-md-12">
-			<input id="city-name" placeholder="Type Your City Here!">
-    </div>
-<!--font awesome by puder-->
-	</div><button id="city-search"><i aria-hidden="true" class="fa fa-glass"></i>Get Weather & A Drink</button> <!-- <div id="city-weather"></div> -->
+			<input id="city-name" class="border border-light" placeholder="Type Your City Here!">
+		</div>
+		<!--font awesome by puder-->
+	</div><button id="city-search" class="border border-light"><i aria-hidden="true" class="fa fa-glass"></i>Get Weather
+		& A Drink</button>
 	<div id="container">
-<!--3 cards used below to display our data-->
-<!--general card layout provided by puder and marvin-->
-<!--card borders provided by puder-->
-<!--w-3 cards implemented and filled by eliza-->
-		<div class="row cards">
+		<!--3 cards used below to display our data-->
+		<!--general card layout provided by puder and marvin-->
+		<!--card borders provided by puder-->
+		<!--w-3 cards implemented and filled by eliza-->
+		<div class="row cards" id="centering">
 			<div class="col-md-4">
 				<div class="w3-card" style="width: 18rem;">
 					<div class="card-body">
-						<div class="card-header border border-dark">
+						<div class="card-header border border-light">
 							Today's Forecast:
-            </div><img alt="..." class="card-img-top" src="assets/images/weather.jpg">
-            <!--temp and weather filled with JSON data-->
-            <!--patrick and eliza-->
-						<p class="card-text" id="city-temp"><i aria-hidden="true" class="fa fa-thermometer-empty"></i> Temperature:</p>
-						<p class="card-text" id="city-weather"><i aria-hidden="true" class="fa fa-sun-o"></i> Weather:</p>
+						</div><img alt="..." class="card-img-top" id="weather" src="assets/images/weatherbubble.jpg">
+						<!--temp and weather filled with JSON data-->
+						<!--patrick and eliza-->
+						<p class="card-text" id="city-temp"><i aria-hidden="true" class="fa fa-thermometer-empty"></i>
+							Temperature:</p>
+						<p class="card-text" id="city-weather"><i aria-hidden="true" class="fa fa-sun-o"></i> Weather:
+						</p>
 					</div>
 				</div>
 			</div>
 			<div class="col-md-4">
 				<div class="w3-card" style="width: 18rem;">
-					<div class="card-header border border-dark">
+					<div class="card-header border border-light">
 						Drink Recommendations:
-          </div>
-          <!--href provided by eliza and patrick for-->
+					</div>
+					<!--href provided by eliza and patrick for-->
 					<ul class="list-group list-group-flush">
 						<li>
 							<a class="list-group-item drink-list" href="#" id="drink0"></a>
@@ -92,14 +97,14 @@
 						</li>
 					</ul>
 				</div>
-      </div>
-      <!--order of 3rd card decided by puder for styling reasons-->
+			</div>
+			<!--order of 3rd card decided by puder for styling reasons-->
 			<div class="col-md-4">
 				<div class="w3-card" style="width: 18rem;">
 					<div class="card-body">
-						<div class="card-header border border-dark">
-              Directions & Ingredients:
-              <!--id and src manipulated by patrick and eliza for JSON data-->
+						<div class="card-header border border-light">
+							Directions & Ingredients:
+							<!--id and src manipulated by patrick and eliza for JSON data-->
 						</div><img alt="" class="card-img-top" id="image" src="">
 						<ul class="list-group list-group-flush" id="ing">
 						</ul>
@@ -107,14 +112,15 @@
 					</div>
 				</div>
 			</div>
-    </div>
-    <!--below script added by eliza-->
+		</div>
+		<!--below script added by eliza-->
 		<script src="assets/javascript/app.js">
-    </script>
-    <!--below footer added by eliza-->
+		</script>
+		<!--below footer added by eliza-->
 		<footer>
 			<p>Copyright © 2019</p>
 		</footer>
 	</div>
 </body>
+
 </html>
