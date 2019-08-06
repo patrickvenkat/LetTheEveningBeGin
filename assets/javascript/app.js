@@ -9,6 +9,9 @@ hotWeatherDrinks = ["A Gilligan's Island", "Absolut Summertime", "Ace", "Bahama 
 //eliza and patrick
 var coldWeatherTemp = 50;
 var mildWeatherTemp = 70;
+//span variable defined below for the modal
+//eliza
+var span = $(".close")[0];
 //click function for city search
 //patrick
 $("#city-search").click(function () {
@@ -42,11 +45,13 @@ function getCityWeather(city) {
 			$("#city-weather").html("<p> Weather  :  " + response.weather[0].description + "</p>");
 			displayDrinks(cityTemp);
 		}
-		//error handling 
-		//patrick
+		//error handling using a modal
+		//eliza
 	}).fail(function (response) {
 		if (response.cod !== 200) {
-			alert("Sorry. Incorrect City Name!");
+			$("#modal").html("Not a valid city name!");
+			modal.style.display = "block";
+			
 		} else {
 			//replace temperature and weather in the HTML
 			//eliza and patrick
@@ -55,6 +60,14 @@ function getCityWeather(city) {
 			$("#city-weather").html("<p> Weather  :  " + response.weather[0].description + "</p>");
 		}
 	});
+}
+
+//click function to exist modal when any other part of the page is clicked
+//eliza
+window.onclick = function(event) {
+	if (event.target !== modal) {
+	  modal.style.display = "none";
+	}
 }
 //function to display drinks based on temperature received above
 //eliza and patrick

@@ -163,3 +163,29 @@ a:hover {
 	border-radius: 5px;
 	text-align: center;
 }
+/*refers to modal styling*/
+/*eliza*/
+.modal {
+	display: none; /* Hidden by default */
+	position: center; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	padding-top: 100px; /* Location of the box */
+	left: 0;
+	top: 0;
+	overflow: auto; /* Enable scroll if needed */
+  }
+/*refers to modal styling*/
+/*eliza*/
+  .modal-content {
+	display: none;
+	background-color: rgba(250, 189, 98, 0.255);
+	margin: auto;
+	padding: 20px;
+	margin-top: 1em;
+	width: 20em;
+	border: none;
+  }
+  
+
+  
+  
