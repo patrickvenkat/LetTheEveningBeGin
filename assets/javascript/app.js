@@ -9,9 +9,6 @@ hotWeatherDrinks = ["A Gilligan's Island", "Absolut Summertime", "Ace", "Bahama 
 //eliza and patrick
 var coldWeatherTemp = 50;
 var mildWeatherTemp = 70;
-//span variable defined below for the modal
-//eliza
-var span = $(".close")[0];
 //click function for city search
 //patrick
 $("#city-search").click(function () {
