@@ -11,7 +11,7 @@ var coldWeatherTemp = 50;
 var mildWeatherTemp = 70;
 //click function for city search
 //patrick
-$("#city-search").click(function() {
+$("#city-search").click(function () {
 	var city = $("#city-name").val();
 	$("#city-weather").html("");
 	getCityWeather(city);
@@ -27,7 +27,7 @@ function getCityWeather(city) {
 	$.ajax({
 		url: queryURL,
 		method: "GET"
-	}).done(function(response) {
+	}).done(function (response) {
 		//error handling
 		//patrick
 		if (response.cod !== 200) {
@@ -44,7 +44,7 @@ function getCityWeather(city) {
 		}
 		//error handling 
 		//patrick
-	}).fail(function(response) {
+	}).fail(function (response) {
 		if (response.cod !== 200) {
 			alert("Sorry. Incorrect City Name!");
 		} else {
@@ -81,7 +81,7 @@ function displayDrinks(temp) {
 }
 //click function for displaying instructions and ingredients
 //patrick
-$(".drink-list").click(function() {
+$(".drink-list").click(function () {
 	var drinkId = $(this).attr('id');
 	var drink = $("#" + drinkId).text();
 	getdrink(drink);
@@ -96,7 +96,7 @@ function getdrink(drink) {
 	$.ajax({
 		url: queryURL,
 		method: "GET"
-	}).done(function(response) {
+	}).done(function (response) {
 		//resets
 		//eliza and patrick
 		$("#ing").html("");
@@ -107,12 +107,14 @@ function getdrink(drink) {
 			var ingredientId = "strIngredient" + i;
 			var measureIg = "strMeasure" + i;
 			//if (or) statement to exclude empty data from display
-			if (((response.drinks[0][ingredientId]) == "") || ((response.drinks[0][ingredientId]) == null)) {}
+			if (((response.drinks[0][ingredientId]) == "") || ((response.drinks[0][ingredientId]) == null)) { }
 			//else statment for adding correct data to display
 			else {
 				$("#ing").append("<li class=\"list-group-item\">" + response.drinks[0][measureIg] + " " + response.drinks[0][ingredientId] + "</li>");
 			}
 		}
-		$('html, body').animate({scrollTop:$(document).height()}, 'slow');
+		//forces page to scroll down when a drink is clicked
+		//patrick
+		$('html, body').animate({ scrollTop: $(document).height() }, 'slow');
 	});
 }

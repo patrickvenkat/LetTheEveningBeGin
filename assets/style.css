@@ -24,7 +24,7 @@ body {
 footer {
 	overflow: hidden;
 	height: 1rem;
-	background-color: rgb(228, 218, 218);
+	background-color:rgba(240, 238, 180, 0.605);
 	text-align: center;
 	font-size: 10px;
 	position: fixed;
@@ -43,28 +43,37 @@ img {
 /*below refers to our container that holds our cards*/
 /*container style by eliza*/
 #container {
-	padding-left: 5em;
-	padding-right: 5em;
+	padding-left: auto;
+	padding-right: auto;
 	padding-top: 2em;
 	margin-bottom: 5em;
 	text-align: center;
+	display: flex;
+	webkit-justify-content: center;
+}
+/*below ensures that our cards are centered properly*/
+/*eliza*/
+#centering{
+	padding:auto;
+	margin:auto;
+	text-align:center;
 }
 /*below refers to the large title*/
 /*title style provided by marvin for user readability*/
 /*title style excecuted by puder*/
 header {
-	height: 150px;
+	height: 120px;
 	width: auto;
 	color: white;
 	font-size: 70px;
 	font-family: Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans, Helvetica Neue, Arial, sans-serif;
 	text-shadow: 3px 2px black;
-	/* width: auto; */
 	width: 100%;
-	color: rgb(39, 75, 33);
-	font-size: 50px;
+	color: rgb(69, 125, 59);
+	font-size: 70px;
 	position: stretch;
 	padding-top: .5em;
+	margin-bottom: .8em;
 }
 /*refers to list*/
 /*eliza*/
@@ -72,7 +81,7 @@ header {
 	padding: 0;
 	background: rgba(240, 182, 58, 0.379);
 	list-style-type: none;
-	color: white;
+	color: black;
 	border: none;
 }
 /*refers to temperature display*/
@@ -80,13 +89,16 @@ header {
 #city-temp {
 	background-color: rgba(240, 182, 58, 0.379);
 	margin-top: 1em;
-	color: rgb(39, 75, 33);
+	color: black;
+	font-size: 18px;
+	margin-bottom: 0;
 }
 /*refers to weather display*/
 /*puder*/
 #city-weather {
 	background-color: rgba(240, 182, 58, 0.379);
-	color: rgb(39, 75, 33);
+	color: black;
+	font-size: 18px;
 }
 /*refers to separtion of list and header*/
 /*puder*/
@@ -103,50 +115,51 @@ a:hover {
 .list-group-flush {
 	list-style: none;
 }
-/*refers to style of drink ingredients */
-/* eliza*/
-#ing {
-	color: white;
-	border: none;
+#directions{
+	color: black;
+	padding-top: 1em;
+	font-style: italic;
 }
 /*refers to styling of our 3 main cards*/
 /*eliza, purder, and marvin*/
 .cards {
-	background-color: rgba(240, 234, 58, 0.255);
+	background-color: rgba(250, 189, 98, 0.255);
 	padding-top: 2em;
 	padding-bottom: 2em;
 	border-radius: 15px;
-	color: rgb(238, 128, 128);
-}
-/*card text color*/
-/*eliza*/
-.card-text {
-	color: rgb(39, 75, 33);
+	padding-left: 0;
+	padding-right: 0;
 }
 /*refers to style of card headers*/
 /*purder*/
 .card-header {
-	background-color: rgba(192, 85, 66, 0.461);
+	background-color: rgb(227, 138, 123);
 	border: none;
-	color: white;
+	color: black;
 }
 /*refers to styling of stock image for the weather*/
+/*eliza*/
 .card-img-top {
-	opacity: .8;
 	height: 200px;
-	padding-bottom: 1em;
+	opacity: .7;
+}
+/*refers to weather stock image*/
+/*eliza*/
+#weather{
+	opacity: .6;
 }
 /*refers to search button*/
 /*eliza and patrick*/
 #city-search {
-	color: white;
-	background: rgb(233, 188, 90);
+	color: black;
+	background: rgba(117, 162, 201, 0.831);
 	margin-top: 1em;
-	border-radius: 15px;
+	border-radius: 5px;
+	line-height: 1.8em;
 }
 /*refers to search entry*/
 /*eliza and patrick*/
 #city-name {
-	border-radius: 15px;
+	border-radius: 5px;
 	text-align: center;
 }
