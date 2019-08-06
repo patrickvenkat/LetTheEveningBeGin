@@ -113,5 +113,6 @@ function getdrink(drink) {
 				$("#ing").append("<li class=\"list-group-item\">" + response.drinks[0][measureIg] + " " + response.drinks[0][ingredientId] + "</li>");
 			}
 		}
+		$('html, body').animate({scrollTop:$(document).height()}, 'slow');
 	});
 }
